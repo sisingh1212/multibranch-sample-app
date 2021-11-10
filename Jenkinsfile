@@ -11,7 +11,7 @@ pipeline {
     }
     stage('cat readme') {
       when {
-        branch sd*
+        branch "sd*"
           
       }
       steps{
