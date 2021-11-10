@@ -10,6 +10,15 @@ pipeline {
       }
     }
   }
+  stage('cat README.txt') {
+    when {
+      branch 'sd*'
+    
+    }  
+    steps{
+     sh 'cat README.md' 
+    }
+  }
   post {
     always {
         junit(
