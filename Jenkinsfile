@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo ' am good'
+        echo $BRANCH_NAME 
       }
     }
     stage('cat readme') {
